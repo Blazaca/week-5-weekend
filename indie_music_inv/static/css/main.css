@@ -1,0 +1,160 @@
+.ct-nav{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.logo{
+    display: flex;
+}
+.logo h2{
+    margin-top: 4.25vh;
+    margin-left: 3vw;
+    color: white;
+    font-weight: 800;
+    font-size: 40px;
+}
+.ct-nav img{
+    width: 13%;
+    max-width: 100%;
+    margin-left: 2vw;
+    padding-top: 2vh;
+    padding-bottom: 1.5vh;
+    border-radius: 75%;
+    border-color: black;
+    border-width: 5px;
+
+}
+
+#horizontal-list{
+    min-width: 55vw;
+    list-style: none;
+    padding-top: 3vw;
+}
+
+#horizontal-list li, #horizontal-list a{
+    display: inline;
+    text-decoration: none;
+    padding: .5vw;
+    color: white;
+}
+
+#horizontal-list a:nth-last-child(1){
+    border: 1.5px solid white;
+    border-radius: 10px;
+    margin-right: 0.1vw;
+}
+
+#horizontal-list a:nth-last-child(2){
+    border: 1.5px solid white;
+    border-radius: 10px;
+    margin-right: 0.2vw;
+}
+
+body{
+    background-color: #915343;
+}
+
+#header-text{
+    padding-top: 20vh;
+    margin-top: 20vh;
+    color: white;
+}
+
+#header-text h2{
+    margin-bottom: 2vh;
+}
+
+#header-text h5{
+    margin-bottom: 2vh;
+}
+
+#header-text button{
+    margin-top: 1vh;
+    margin-right: 3vh;
+}
+
+.header-img{
+    width: 75vw;
+    max-width: 100%;
+    margin-top: 20vh;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.image-line-break{
+    width: 75vw;
+    max-width: 100%;
+    margin-left: 4vw;
+    margin-top: 15vh;
+    border: 3px solid black;
+    border-radius: 100px;
+}
+
+#features{
+    margin-top: 15vh;
+}
+
+#featureimg1 {
+    width: 15vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#featureimg2 {
+    width: 15vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+    border-radius: 4px;
+}
+#featureimg3 {
+    width: 15vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature{
+    text-align: center;
+}
+
+#features-text{
+    color: white;
+}
+
+.feature h4{
+    margin-top: 6vh;
+}
+
+#horizontal-list-bottom{
+    min-width: 55vw;
+    list-style: none;
+    padding-top: 3vw;
+    margin-bottom: 3vh;
+}
+
+#horizontal-list-bottom li, #horizontal-list-bottom a{
+    display: inline;
+    text-decoration: none;
+    padding: 1vw;
+    color: white;
+}
+
+footer{
+    margin-top: 10vh;
+    background-color: black;
+    text-align: center;
+    color: white;
+
+}
+
+.copyright{
+    margin-bottom: 20vh;
+}
+
+#login-field{
+    text-align: center;
+}
+/* #494544 the brown */

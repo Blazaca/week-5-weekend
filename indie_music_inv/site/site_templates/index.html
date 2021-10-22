@@ -1,0 +1,88 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+{% with messages = get_flashed_messages(with_categories = true) %}
+    {% if messages %}
+        {% for cat, msg in messages %}
+            {% if cat == 'user-created' or cat == 'auth-success' %}
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                {{ msg }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>                                
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+<div class="container">
+    <header class="row">
+        <div class="col-12 col-md-6">
+            <img src="../../static/images/moog_one.png" alt="moog one" class="header-img">
+        </div>
+        <div class="col-12 col-md-6" id="header-text">
+            <h2>Help us create the largest database of Music!</h2>
+            <h5>Be a part of the tool that will help categorize music forever!</h5>
+            <button class="btn btn-primary">View Our Docs</button>
+            <button class="btn btn-primary">Join Our Slack</button>
+        </div>
+
+    </header>
+    <section class="row">
+        <div class="col-12 line">
+            <img src="../../static/images/synth_line_graphic.png" alt="line-graphic" class="image-line-break">
+        </div>
+    </section>
+    <section class="row" id="features">
+        <div class="col-12 col-md-4 feature" id="">
+            <img src="../../static/images/modular_img.jpg" alt="" id="featureimg1">
+        </div>
+        <div class="col-12 col-md-4 feature" id="">
+            <img src="../../static/images/juno_img.jpeg" alt="" id="featureimg2">
+        </div>
+        <div class="col-12 col-md-4 feature" id="">
+            <img src="../../static/images/file_img.jpg" alt="" id="featureimg3">
+        </div>
+    </section>
+    <section class="row" id="features-text">
+        <div class="col-12 col-md-4 feature" id="">
+            <h4>Cloud</h4>
+            <p>Your favorite albums all in one spot online</p>
+        </div>
+        <div class="col-12 col-md-4 feature" id="">
+            <h4>Private</h4>
+            <p>For uses in private situations we got you covered..</p>
+        </div>
+        <div class="col-12 col-md-4 feature" id="">
+            <h4>In Browser Dictionary</h4>
+            <p>Never lose track of your music ever again!</p>
+        </div>
+    </section>
+</div>
+<footer>
+    <div>
+        <ul id="horizontal-list">
+            <a href="">
+                <li>Instructions</li>
+            </a>
+            <a href="">
+                <li>Share</li>
+            </a>
+            <a href="">
+                <li>Copyright</li>
+            </a>
+            <a href="">
+                <li>Our Team</li>
+            </a>
+            <a href="">
+                <li>Portfolio</li>
+            </a>
+            <a href="">
+                <li>Github</li>
+            </a>
+        </ul-horizontal-list>
+    </div>
+    <div>
+        <p>Copyright. 2042</p>
+    </div>
+</footer>
+{% endblock content %}

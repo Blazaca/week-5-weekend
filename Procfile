@@ -1,0 +1,1 @@
+web: gunicorn indie_music_inv:app --preload --timeout 60
